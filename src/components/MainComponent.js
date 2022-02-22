@@ -3,6 +3,7 @@ import Staff from './StaffComponent';
 import StaffDetail from './StaffdetailComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import Section from './SectionComponent';
 import {DEPARTMENTS,ROLE,STAFFS} from '../shared/staffs.jsx'
 import { Switch, Route } from 'react-router-dom';
 
@@ -30,7 +31,8 @@ class Main extends Component {
         <Header/>
         <Switch>
               <Route exact path='/' component={() => <Staff Staff={this.state.staffs} />} />  
-              <Route path='/staff/:dishId' component={DishWithId} />
+              <Route exact path='/staff/:dishId' component={DishWithId} />
+              <Route path='/section' component={()=><Section section={this.state.depart}/>} />
         </Switch>
         <Footer/>
       </div>
