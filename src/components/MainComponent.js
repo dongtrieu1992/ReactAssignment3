@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Staff from './StaffComponent';
 import StaffDetail from './StaffdetailComponent';
+import Header from './HeaderComponent';
 import {DEPARTMENTS,ROLE,STAFFS} from '../shared/staffs.jsx'
 import { Switch, Route } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ class Main extends Component {
     };
     return (
       <div>
+        <Header/>
         <Switch>
               <Route exact path='/' component={() => <Staff Staff={this.state.staffs} />} />  
               <Route path='/staff/:dishId' component={DishWithId} />
