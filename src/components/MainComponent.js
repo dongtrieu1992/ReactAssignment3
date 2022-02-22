@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Staff from './StaffComponent';
 import StaffDetail from './StaffdetailComponent';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import {DEPARTMENTS,ROLE,STAFFS} from '../shared/staffs.jsx'
 import { Switch, Route } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ class Main extends Component {
               <Route exact path='/' component={() => <Staff Staff={this.state.staffs} />} />  
               <Route path='/staff/:dishId' component={DishWithId} />
         </Switch>
+        <Footer/>
       </div>
     );
   }

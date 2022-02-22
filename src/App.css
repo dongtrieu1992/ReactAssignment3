@@ -1,3 +1,8 @@
+a,a:hover{
+    color: black;
+    text-decoration: none;
+}
+
 .row-header{
     margin:0px auto;
     padding:0px auto;
@@ -11,7 +16,7 @@
 }
 
 .footer{
-    background-color: #D1C4E9;
+    background-color: #0fc3db;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -29,5 +34,5 @@ address{
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+    background-color: rgb(0, 110, 255);
 }
