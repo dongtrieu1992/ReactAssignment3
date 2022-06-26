@@ -139,7 +139,7 @@ export default function dateFormat (date, mask, utc, gmt) {
       pad(Math.floor(Math.abs(o()) % 60), 2),
     S: () =>
       ["th", "st", "nd", "rd"][
-        d() % 10 > 3 ? 0 : (((d() % 100) - (d() % 10) != 10) * d()) % 10
+        d() % 10 > 3 ? 0 : (((d() % 100) - (d() % 10) !== 10) * d()) % 10
       ],
     W: () => W(),
     WW: () => pad( W() ),

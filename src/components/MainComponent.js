@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React,{Component} from 'react';
 import Staff from './StaffComponent';
 import StaffDetail from './StaffdetailComponent';
 import Header from './HeaderComponent';
